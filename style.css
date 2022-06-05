@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
+
+* {
+ margin: 0;  
+}
+
+body {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+
+#slider{
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(28, 36, 60); */
+    background-color: black;
+}
+
+.container{
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer{
+    width: 85%;
+    margin: auto;
+}
+
+.controller{
+    display: flex;
+    justify-content: space-between;
+}
+
+#controls i{
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.previus, .next{
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.7s ease-in-out;
+    border: 3px solid white;
+    background-color: black;
+    box-shadow: 0 0 5px #bbb;
+}
+
+.previus:hover, .next:hover{
+    border: 3px solid gray;
+}
+
+.slide-img{
+    width: 100%;
+    height: 275px;
+    /* border: 1px solid white; */
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.slide-img:hover{
+    box-shadow: 0 0 0 200px black inset;
+
+}
+
+.slide-img a{
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+}
+
+.slide-img:hover a{
+      opacity: 1;
+      transform: scale(1);
+}
+
+.img-1{
+    background-image: url(./image/pexels-roberto-nickson-2816168.jpg);
+}
+
+.img-2{
+    background-image: url(./image/pexels-pixabay-356844.jpg);
+}
+
+.img-3{
+    background-image: url(./image/pexels-pixabay-208745.jpg);
+}
+
+.img-4{
+    background-image: url(./image/pexels-samuel-karle-4194067.jpg);
+}
+
+.img-5{
+    background-image: url(./image/pexels-chait-goli-2093318.jpg);
+}
+
+@media(max-width:1600px){
+    .container{
+        width: 100%;
+    }
+}
